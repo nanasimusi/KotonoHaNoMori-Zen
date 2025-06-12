@@ -1,11 +1,37 @@
 import Foundation
 import SwiftUI
 
+enum GameMode: CaseIterable {
+    case english
+    case kanji
+    case hiragana
+    case mixed
+    
+    var displayName: String {
+        switch self {
+        case .english: return "English"
+        case .kanji: return "漢字"
+        case .hiragana: return "ひらがな"
+        case .mixed: return "Mixed"
+        }
+    }
+    
+    var emoji: String {
+        switch self {
+        case .english: return "🌍"
+        case .kanji: return "㊊"
+        case .hiragana: return "あ"
+        case .mixed: return "🌈"
+        }
+    }
+}
+
 class GameState: ObservableObject {
     @Published var words: [Word] = []
     @Published var score: Int = 0
     @Published var isPlaying: Bool = false
     @Published var screenSize: CGSize = .zero
+    @Published var selectedMode: GameMode?
     
     private let maxWords: Int = 15
     private let minWords: Int = 8
@@ -31,6 +57,10 @@ class GameState: ObservableObject {
         Word(text: "みどり", reading: "midori", type: .hiragana, mood: .calm)
     ]
     
+    func setMode(_ mode: GameMode) {
+        selectedMode = mode
+    }
+    
     func startGame() {
         isPlaying = true
         score = 0
@@ -40,6 +70,7 @@ class GameState: ObservableObject {
     func stopGame() {
         isPlaying = false
         words.removeAll()
+        selectedMode = nil
     }
     
     func removeWord(_ word: Word) {
@@ -62,13 +93,29 @@ class GameState: ObservableObject {
     }
     
     private func addRandomWord() {
-        guard !sampleWords.isEmpty else { return }
+        let availableWords = getWordsForCurrentMode()
+        guard !availableWords.isEmpty else { return }
         
-        var newWord = sampleWords.randomElement()!
+        var newWord = availableWords.randomElement()!
         newWord.position = randomPosition()
         newWord.mood = WordMood.allCases.randomElement()!
         
         words.append(newWord)
+    }
+    
+    private func getWordsForCurrentMode() -> [Word] {
+        guard let mode = selectedMode else { return sampleWords }
+        
+        switch mode {
+        case .english:
+            return sampleWords.filter { $0.type == .english }
+        case .kanji:
+            return sampleWords.filter { $0.type == .kanji }
+        case .hiragana:
+            return sampleWords.filter { $0.type == .hiragana }
+        case .mixed:
+            return sampleWords
+        }
     }
     
     private func randomPosition() -> CGPoint {
