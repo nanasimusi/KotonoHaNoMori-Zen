@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0A1F2B2C0A1B0000000001 /* KotonoHaNoMoriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F2A2C0A1B0000000001 /* KotonoHaNoMoriApp.swift */; };
+		3D0A1F2D2C0A1B0000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F2C2C0A1B0000000002 /* ContentView.swift */; };
+		3D0A1F322C0A1B0100000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A1F312C0A1B0100000003 /* Assets.xcassets */; };
+		3D0A1F352C0A1B0100000004 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A1F342C0A1B0100000004 /* Preview Assets.xcassets */; };
+		3D0A1F402C0A1B0200000005 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F3F2C0A1B0200000005 /* GameState.swift */; };
+		3D0A1F422C0A1B0200000006 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F412C0A1B0200000006 /* Word.swift */; };
+		3D0A1F442C0A1B0200000007 /* WordState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F432C0A1B0200000007 /* WordState.swift */; };
+		3D0A1F462C0A1B0200000008 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F452C0A1B0200000008 /* GameView.swift */; };
+		3D0A1F482C0A1B0200000009 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F472C0A1B0200000009 /* WordView.swift */; };
+		3D0A1F4A2C0A1B020000000A /* InkSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F492C0A1B020000000A /* InkSplashView.swift */; };
+		3D0A1F4C2C0A1B020000000B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F4B2C0A1B020000000B /* GameViewModel.swift */; };
+		3D0A1F4E2C0A1B020000000C /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F4D2C0A1B020000000C /* AudioService.swift */; };
+		3D0A1F502C0A1B020000000D /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F4F2C0A1B020000000D /* WordService.swift */; };
+		3D0A1F522C0A1B020000000E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F512C0A1B020000000E /* Extensions.swift */; };
+		3D0A1F542C0A1B020000000F /* OptimizedTTSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A1F532C0A1B020000000F /* OptimizedTTSManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D0A1F272C0A1B0000000001 /* KotonoHaNoMori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotonoHaNoMori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0A1F2A2C0A1B0000000001 /* KotonoHaNoMoriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotonoHaNoMoriApp.swift; sourceTree = "<group>"; };
+		3D0A1F2C2C0A1B0000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D0A1F312C0A1B0100000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D0A1F342C0A1B0100000004 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D0A1F3F2C0A1B0200000005 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		3D0A1F412C0A1B0200000006 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		3D0A1F432C0A1B0200000007 /* WordState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordState.swift; sourceTree = "<group>"; };
+		3D0A1F452C0A1B0200000008 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		3D0A1F472C0A1B0200000009 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		3D0A1F492C0A1B020000000A /* InkSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkSplashView.swift; sourceTree = "<group>"; };
+		3D0A1F4B2C0A1B020000000B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		3D0A1F4D2C0A1B020000000C /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		3D0A1F4F2C0A1B020000000D /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
+		3D0A1F512C0A1B020000000E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D0A1F532C0A1B020000000F /* OptimizedTTSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimizedTTSManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D0A1F242C0A1B0000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D0A1F1E2C0A1B0000000001 = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F292C0A1B0000000001 /* KotonoHaNoMori */,
+				3D0A1F282C0A1B0000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D0A1F282C0A1B0000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F272C0A1B0000000001 /* KotonoHaNoMori.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D0A1F292C0A1B0000000001 /* KotonoHaNoMori */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F5A2C0A1B030000000F /* App */,
+				3D0A1F5B2C0A1B0300000010 /* Models */,
+				3D0A1F5C2C0A1B0300000011 /* Views */,
+				3D0A1F5D2C0A1B0300000012 /* ViewModels */,
+				3D0A1F5E2C0A1B0300000013 /* Services */,
+				3D0A1F5F2C0A1B0300000014 /* Utils */,
+				3D0A1F602C0A1B0300000015 /* Resources */,
+				3D0A1F312C0A1B0100000003 /* Assets.xcassets */,
+				3D0A1F332C0A1B0100000004 /* Preview Content */,
+			);
+			path = KotonoHaNoMori;
+			sourceTree = "<group>";
+		};
+		3D0A1F332C0A1B0100000004 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F342C0A1B0100000004 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D0A1F5A2C0A1B030000000F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F2A2C0A1B0000000001 /* KotonoHaNoMoriApp.swift */,
+				3D0A1F2C2C0A1B0000000002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D0A1F5B2C0A1B0300000010 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F3F2C0A1B0200000005 /* GameState.swift */,
+				3D0A1F412C0A1B0200000006 /* Word.swift */,
+				3D0A1F432C0A1B0200000007 /* WordState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D0A1F5C2C0A1B0300000011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F452C0A1B0200000008 /* GameView.swift */,
+				3D0A1F472C0A1B0200000009 /* WordView.swift */,
+				3D0A1F612C0A1B0300000016 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D0A1F5D2C0A1B0300000012 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F4B2C0A1B020000000B /* GameViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D0A1F5E2C0A1B0300000013 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F4D2C0A1B020000000C /* AudioService.swift */,
+				3D0A1F4F2C0A1B020000000D /* WordService.swift */,
+				3D0A1F532C0A1B020000000F /* OptimizedTTSManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D0A1F5F2C0A1B0300000014 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F512C0A1B020000000E /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3D0A1F602C0A1B0300000015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D0A1F612C0A1B0300000016 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3D0A1F492C0A1B020000000A /* InkSplashView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D0A1F262C0A1B0000000001 /* KotonoHaNoMori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D0A1F382C0A1B0100000002 /* Build configuration list for PBXNativeTarget "KotonoHaNoMori" */;
+			buildPhases = (
+				3D0A1F232C0A1B0000000001 /* Sources */,
+				3D0A1F242C0A1B0000000001 /* Frameworks */,
+				3D0A1F252C0A1B0000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KotonoHaNoMori;
+			productName = KotonoHaNoMori;
+			productReference = 3D0A1F272C0A1B0000000001 /* KotonoHaNoMori.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D0A1F1F2C0A1B0000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3D0A1F262C0A1B0000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 3D0A1F222C0A1B0000000001 /* Build configuration list for PBXProject "KotonoHaNoMori" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D0A1F1E2C0A1B0000000001;
+			productRefGroup = 3D0A1F282C0A1B0000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D0A1F262C0A1B0000000001 /* KotonoHaNoMori */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D0A1F252C0A1B0000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0A1F352C0A1B0100000004 /* Preview Assets.xcassets in Resources */,
+				3D0A1F322C0A1B0100000003 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D0A1F232C0A1B0000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0A1F2D2C0A1B0000000002 /* ContentView.swift in Sources */,
+				3D0A1F2B2C0A1B0000000001 /* KotonoHaNoMoriApp.swift in Sources */,
+				3D0A1F402C0A1B0200000005 /* GameState.swift in Sources */,
+				3D0A1F422C0A1B0200000006 /* Word.swift in Sources */,
+				3D0A1F442C0A1B0200000007 /* WordState.swift in Sources */,
+				3D0A1F462C0A1B0200000008 /* GameView.swift in Sources */,
+				3D0A1F482C0A1B0200000009 /* WordView.swift in Sources */,
+				3D0A1F4A2C0A1B020000000A /* InkSplashView.swift in Sources */,
+				3D0A1F4C2C0A1B020000000B /* GameViewModel.swift in Sources */,
+				3D0A1F4E2C0A1B020000000C /* AudioService.swift in Sources */,
+				3D0A1F502C0A1B020000000D /* WordService.swift in Sources */,
+				3D0A1F522C0A1B020000000E /* Extensions.swift in Sources */,
+				3D0A1F542C0A1B020000000F /* OptimizedTTSManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D0A1F362C0A1B0100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D0A1F372C0A1B0100000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D0A1F392C0A1B0100000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KotonoHaNoMori/Preview Content\"";
+				DEVELOPMENT_TEAM = V8WRS8UB4L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenjinakayama.KotonoHaNoMori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D0A1F3A2C0A1B0100000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KotonoHaNoMori/Preview Content\"";
+				DEVELOPMENT_TEAM = V8WRS8UB4L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenjinakayama.KotonoHaNoMori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D0A1F222C0A1B0000000001 /* Build configuration list for PBXProject "KotonoHaNoMori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0A1F362C0A1B0100000001 /* Debug */,
+				3D0A1F372C0A1B0100000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D0A1F382C0A1B0100000002 /* Build configuration list for PBXNativeTarget "KotonoHaNoMori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0A1F392C0A1B0100000003 /* Debug */,
+				3D0A1F3A2C0A1B0100000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D0A1F1F2C0A1B0000000001 /* Project object */;
+}
